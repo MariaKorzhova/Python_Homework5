@@ -10,12 +10,10 @@
 
 def sum(x, y):
     summ = 0
-    if x != 0 and y !=0:
-        summ = sum(x-1, y-1) + 1 + 1
-    elif x != 0:
-        summ = sum(x-1, 0) + 1
+    if x != 0:
+        summ = sum(x-1, y) + 1
     elif y != 0:
-        summ = sum(0, y-1) + 1
+        summ = sum(x, y-1) + 1
     return summ
 
 A = int(input("Введите число А: "))
